@@ -1,29 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmarques <nmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/15 16:47:08 by nmarques          #+#    #+#             */
-/*   Updated: 2021/09/29 13:37:41 by nmarques         ###   ########.fr       */
+/*   Created: 2021/10/01 14:18:13 by nmarques          #+#    #+#             */
+/*   Updated: 2021/10/01 15:09:52 by nmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		len;
-	char	*s_sign;
-
-	s_sign = (char *)s;
-	len = ft_strlen(s_sign);
-	while (len >= 0)
-	{
-		if (s_sign[len] == c)
-			return ((char *)s_sign + len);
-		len--;
-	}
-	return (NULL);
 }
